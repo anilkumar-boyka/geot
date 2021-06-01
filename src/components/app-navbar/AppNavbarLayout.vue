@@ -27,15 +27,7 @@
         <user-dropdown />
       </b-navbar-nav>
     </b-navbar>
-    <div>
-      <b-card title="Title" header-tag="header" footer-tag="footer">
-        <template #header>
-          <h6 class="mb-0">Header Slot</h6>
-        </template>
-        <b-card-text>Header and footers using slots.</b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-      </b-card>
-    </div>
+    
     <b-modal
       hide-footer
       hide-header
@@ -114,12 +106,7 @@
  
     </b-modal>
 
-    <p>
-<img src="https://placekitten.com/300/300" alt="Smiley face" style="float:right;width:42px;height:42px;">
-<img src="https://placekitten.com/300/300"  alt="Smiley face" style="float:left;width:42px;height:42px;">
- <b>Lawrence Powers</b><br />
- <span class="text-muted">My page</span>
-</p>
+    
   </div>
   
 </template>
@@ -155,5 +142,8 @@ bi-icon,
 img {
   border-radius: 15px;
 }
+/* .mt-2 {
+  margin-top: 0 !important;
+} */
 </style>
 

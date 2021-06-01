@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-nav-item-dropdown class="">
+    <b-nav-item-dropdown class="dropdown-item mt-2">
       <template #button-content>
         <b-icon icon="bell" class="text-secondary"></b-icon>
       </template>
@@ -65,8 +65,4 @@
   width: 350px;
   white-space: normal;
 }
-/* .o {
-  max-width: 300px;
-  word-wrap: break-word;
-} */
 </style>
