@@ -10,11 +10,83 @@
           </div>
           <div class="col-6">
             <b-card class="border-0">
-              <b-tabs content-class="mt-3" pills>
-                <b-tab v-for="title in tabsTitle" :key="title" :title="title">
-                  <!--  <component :is="component_name"></component> -->
-                </b-tab>
-              </b-tabs>
+              <div>
+                <b-tabs
+                  content-class="mt-3"
+                  pills
+                  variant="info"
+                  class="d-inline-block"
+                >
+                  <b-tab v-for="title in tabsTitle" :key="title" :title="title">
+                    <!--  <component :is="component_name"></component> -->
+                  </b-tab>
+                </b-tabs>
+                <!--  <b-button
+                  pill
+                  variant="light"
+                  class="m-auto mt-1 mb-3 text-secondary border float-end"
+                > -->
+                <b-dropdown
+                  id="dropdown-right"
+                  right
+                  text="+ Add..."
+                  class="m-2 float-end add"
+                  variant="primary"
+                >
+                  <b-dropdown-item href="#" class="mb-3">
+                    <div>
+                      <div class="d-inline-block">
+                        <b-avatar size="3em" class="add border me-4">
+                          <b-icon icon="camera" font-scale="1"></b-icon>
+                        </b-avatar>
+                        <br />
+                        <span class="text-muted">Photo</span>
+                      </div>
+                      <div class="d-inline-block">
+                        <b-avatar size="3em" class="add border">
+                          <b-icon icon="geo-alt" font-scale="1"></b-icon>
+                        </b-avatar>
+                        <br />
+                        <span class="text-muted">Location</span>
+                      </div>
+                    </div>
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#" class="mb-3">
+                    <div class="d-inline-block">
+                      <b-avatar size="3em" class="add border me-4">
+                        <b-icon icon="mic" font-scale="1"></b-icon>
+                      </b-avatar>
+                      <br />
+                      <span class="text-muted">Record</span>
+                    </div>
+                    <div class="d-inline-block">
+                      <b-avatar size="3em" class="add border">
+                        <b-icon
+                          icon="link45deg"
+                          font-scale="1"
+                        ></b-icon> </b-avatar
+                      ><br />
+                      <span class="text-muted m-2"> Link</span>
+                    </div>
+                  </b-dropdown-item>
+                  <b-dropdown-item href="#">
+                    <div class="d-inline-block">
+                      <b-avatar size="3em" class="add border me-4">
+                        <b-icon icon="gear" font-scale="1"></b-icon>
+                      </b-avatar>
+                      <br />
+                      <span class="text-muted">Badge</span>
+                    </div>
+                    <div class="d-inline-block">
+                      <b-avatar size="3em" class="add border">
+                        <b-icon icon="calendar" font-scale="1"></b-icon>
+                      </b-avatar>
+                      <br />
+                      <span class="text-muted">Event</span>
+                    </div>
+                  </b-dropdown-item>
+                </b-dropdown>
+              </div>
               <div>
                 <img
                   class="w-100 mb-3"
@@ -64,7 +136,7 @@
                     <b-icon icon="x-circle-fill" class="float-end"></b-icon>
                   </b-button>
                 </div>
-                <div>
+                <!--  <div>
                   <b>Categories</b>
                   <b-card></b-card>
                   <b-card></b-card>
@@ -72,7 +144,7 @@
                   <b-card></b-card>
                   <b-card></b-card>
                   <b-card></b-card>
-                </div>
+                </div> -->
               </div>
             </b-card>
           </div>
@@ -82,6 +154,13 @@
         </div>
       </b-card>
     </div>
+    <!--  <b-icon icon="camera"></b-icon>
+    <b-icon icon="geo-alt"></b-icon>
+    <b-icon icon="mic"></b-icon>
+    <b-icon icon="link45deg"></b-icon>
+    <b-icon icon="upload"></b-icon>
+    <b-icon icon="gear"></b-icon>
+    <b-icon icon="calendar"></b-icon> -->
   </div>
 </template>
 
@@ -102,3 +181,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+ul {
+  background-color: rebeccapurple;
+}
+.add {
+  background-color: #f8f9fa;
+  color: #0dcaf0;
+}
+</style>

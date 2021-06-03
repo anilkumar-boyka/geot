@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-card no-body style="max-width: 15rem" class="mt-5 shadow-sm">
+    <b-card no-body style="max-width: 15rem" class="checklist shadow-sm">
       <b-card-body>
         <b-card-title><b>Checklist</b></b-card-title>
         <div v-for="name in checkListNames" :key="name" class="mb-2">
@@ -154,5 +154,8 @@ export default {
 }
 .bottom-text {
   text-align: center;
+}
+.checklist {
+  margin-top: 5rem !important;
 }
 </style>

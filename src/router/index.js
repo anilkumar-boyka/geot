@@ -13,9 +13,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Navbar',
-      component: Navbar
-    },{
+      name: 'Homepage',
+      component: HomePage
+    },
+   /*  {
       path:'/checklist',
       name : CheckList,
       component : CheckList,
@@ -29,6 +30,6 @@ export default new Router({
       path:'/homepage',
       name : 'HomePage',
       component : HomePage
-    }
+    } */
   ]
 })
